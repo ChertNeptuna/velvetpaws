@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цены — Velvet Paws</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <i class="fas fa-paw"></i> Velvet Paws
+        </div>
+        <div class="burger" onclick="toggleMenu()">☰</div>
+        <nav id="nav">
+            <a href="index.html"><i class="fas fa-home"></i> Главная</a>
+            <a href="about.html"><i class="fas fa-info-circle"></i> О нас</a>
+            <a href="works.html"><i class="fas fa-images"></i> Наши работы</a>
+            <a href="prices.html" class="active"><i class="fas fa-tag"></i> Цены</a>
+            <a href="contacts.html"><i class="fas fa-phone-alt"></i> Контакты</a>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>Наши цены</h1>
+            <p>Прозрачное ценообразование и индивидуальный подход к каждому питомцу</p>
+        </div>
+    </section>
+
+    <section class="pricing-intro">
+        <div class="container">
+            <div class="intro-content">
+                <h2>Стоимость услуг</h2>
+                <p>Окончательная цена рассчитывается индивидуально и зависит от породы, размера питомца, состояния шерсти и выбранных услуг.</p>
+                <p>При первом визите — <strong>бесплатная консультация грумера</strong> и <strong>скидка 15%</strong> на комплексный груминг!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-tables">
+        <div class="container">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="dogs">Для собак</button>
+                <button class="tab-btn" data-tab="cats">Для кошек</button>
+                <button class="tab-btn" data-tab="spa">SPA-процедуры</button>
+                <button class="tab-btn" data-tab="additional">Дополнительные услуги</button>
+            </div>
+
+            <!-- Таблица для собак -->
+            <div class="pricing-table active" id="dogs-table">
+                <h3><i class="fas fa-dog"></i> Услуги для собак</h3>
+                <div class="table-responsive">
+                    <table class="price-table">
+                        <thead>
+                            <tr>
+                                <th>Услуга</th>
+                                <th>Маленькие породы (до 5 кг)</th>
+                                <th>Средние породы (5-15 кг)</th>
+                                <th>Крупные породы (от 15 кг)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Комплексный груминг</td>
+                                <td>1500 - 2500 ₽</td>
+                                <td>2500 - 4000 ₽</td>
+                                <td>4000 - 6000 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Экспресс-уход (мытье + сушка)</td>
+                                <td>1000 - 1500 ₽</td>
+                                <td>1500 - 2500 ₽</td>
+                                <td>2500 - 3500 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Гигиеническая стрижка</td>
+                                <td>1200 - 1800 ₽</td>
+                                <td>1800 - 2800 ₽</td>
+                                <td>2800 - 4000 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Породная/креативная стрижка</td>
+                                <td>2000 - 3000 ₽</td>
+                                <td>3000 - 4500 ₽</td>
+                                <td>4500 - 6500 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Тримминг (жесткошерстные породы)</td>
+                                <td>1800 - 2500 ₽</td>
+                                <td>2500 - 3500 ₽</td>
+                                <td>3500 - 5000 ₽</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="price-note">
+                    <p><i class="fas fa-info-circle"></i> Комплексный груминг включает: мытье специализированным шампунем, сушка, стрижка/тримминг, стрижка когтей, чистка ушей, чистка зубов, уход за глазами.</p>
+                </div>
+            </div>
+            <div class="pricing-table" id="cats-table">
+                <h3><i class="fas fa-cat"></i> Услуги для кошек</h3>
+                <div class="table-responsive">
+                    <table class="price-table">
+                        <thead>
+                            <tr>
+                                <th>Услуга</th>
+                                <th>Короткошерстные</th>
+                                <th>Длинношерстные</th>
+                                <th>Экзотические породы</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Комплексный груминг</td>
+                                <td>2000 - 3000 ₽</td>
+                                <td>2500 - 4000 ₽</td>
+                                <td>3000 - 5000 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Экспресс-уход</td>
+                                <td>1500 - 2000 ₽</td>
+                                <td>2000 - 3000 ₽</td>
+                                <td>2500 - 3500 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Гигиеническая стрижка</td>
+                                <td>1800 - 2500 ₽</td>
+                                <td>2500 - 3500 ₽</td>
+                                <td>3000 - 4500 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Вычесывание колтунов</td>
+                                <td>1000 - 1500 ₽</td>
+                                <td>1500 - 2500 ₽</td>
+                                <td>2000 - 3000 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Стрижка "под льва"</td>
+                                <td>2500 - 3500 ₽</td>
+                                <td>3000 - 4500 ₽</td>
+                                <td>3500 - 5500 ₽</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="price-note">
+                    <p><i class="fas fa-info-circle"></i> Для кошек мы используем специальные успокаивающие средства и создаем максимально комфортную обстановку. Работаем только с привитыми животными.</p>
+                </div>
+            </div>
+            <div class="pricing-table" id="spa-table">
+                <h3><i class="fas fa-spa"></i> SPA-процедуры</h3>
+                <div class="table-responsive">
+                    <table class="price-table">
+                        <thead>
+                            <tr>
+                                <th>Услуга</th>
+                                <th>Описание</th>
+                                <th>Стоимость</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>SPA-комплекс "Премиум"</td>
+                                <td>Расслабляющая ванна, массаж, маска для шерсти, ароматерапия, укладка</td>
+                                <td>от 2500 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Лечебные ванны</td>
+                                <td>При кожных проблемах, аллергии, для чувствительной кожи</td>
+                                <td>от 1500 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Ароматерапия</td>
+                                <td>Успокаивающие или тонизирующие аромамасла для релаксации</td>
+                                <td>от 800 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Массаж</td>
+                                <td>Расслабляющий или лечебный массаж для улучшения кровообращения</td>
+                                <td>от 1000 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Маски для шерсти</td>
+                                <td>Восстанавливающие, увлажняющие или питательные маски</td>
+                                <td>от 1200 ₽</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="price-note">
+                    <p><i class="fas fa-info-circle"></i> SPA-процедуры особенно рекомендуются для пожилых животных, после линьки или для подготовки к выставкам.</p>
+                </div>
+            </div>
+            <div class="pricing-table" id="additional-table">
+                <h3><i class="fas fa-plus-circle"></i> Дополнительные услуги</h3>
+                <div class="table-responsive">
+                    <table class="price-table">
+                        <thead>
+                            <tr>
+                                <th>Услуга</th>
+                                <th>Описание</th>
+                                <th>Стоимость</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Чистка зубов</td>
+                                <td>Профессиональная чистка без наркоза</td>
+                                <td>800 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Стрижка когтей</td>
+                                <td>Аккуратная стрижка + обработка пилочкой</td>
+                                <td>300 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Чистка ушей</td>
+                                <td>Глубокая чистка с применением лосьона</td>
+                                <td>400 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Уход за глазами</td>
+                                <td>Обработка области вокруг глаз, удаление слезных дорожек</td>
+                                <td>350 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Удаление колтунов</td>
+                                <td>Аккуратное вычесывание или выстригание (за колтун)</td>
+                                <td>200 - 500 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Выражение параанальных желез</td>
+                                <td>Профессиональная процедура по необходимости</td>
+                                <td>500 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Креативное окрашивание</td>
+                                <td>Безопасными красками для животных (за зону)</td>
+                                <td>от 1000 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Укладка шерсти</td>
+                                <td>С использованием профессиональных средств</td>
+                                <td>от 700 ₽</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="price-note">
+                    <p><i class="fas fa-info-circle"></i> Дополнительные услуги можно заказать как отдельно, так и в составе комплексного груминга.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="packages">
+        <div class="container">
+            <h2>Готовые пакеты услуг</h2>
+            <p class="subtitle">Экономьте до 20% при выборе пакетного предложения</p>
+            <div class="packages-container">
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>Базовый</h3>
+                        <div class="package-price">от 2500 ₽</div>
+                    </div>
+                    <div class="package-content">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Мытье специализированным шампунем</li>
+                            <li><i class="fas fa-check"></i> Сушка комфортной температурой</li>
+                            <li><i class="fas fa-check"></i> Гигиеническая стрижка</li>
+                            <li><i class="fas fa-check"></i> Стрижка когтей</li>
+                            <li><i class="fas fa-check"></i> Чистка ушей</li>
+                        </ul>
+                        <a href="contacts.html" class="btn">Выбрать пакет</a>
+                    </div>
+                </div>
+                <div class="package-card popular">
+                    <div class="package-badge">ХИТ</div>
+                    <div class="package-header">
+                        <h3>Комфорт</h3>
+                        <div class="package-price">от 4000 ₽</div>
+                    </div>
+                    <div class="package-content">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Всё из пакета "Базовый"</li>
+                            <li><i class="fas fa-check"></i> Породная/модная стрижка</li>
+                            <li><i class="fas fa-check"></i> Чистка зубов</li>
+                            <li><i class="fas fa-check"></i> Уход за глазами</li>
+                            <li><i class="fas fa-check"></i> Легкий массаж</li>
+                            <li><i class="fas fa-check"></i> Ароматизация шерсти</li>
+                        </ul>
+                        <a href="contacts.html" class="btn">Выбрать пакет</a>
+                    </div>
+                </div>
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>Премиум</h3>
+                        <div class="package-price">от 6000 ₽</div>
+                    </div>
+                    <div class="package-content">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Всё из пакета "Комфорт"</li>
+                            <li><i class="fas fa-check"></i> SPA-комплекс</li>
+                            <li><i class="fas fa-check"></i> Маска для шерсти</li>
+                            <li><i class="fas fa-check"></i> Профессиональная укладка</li>
+                            <li><i class="fas fa-check"></i> Креативный элемент (бант/аксессуар)</li>
+                            <li><i class="fas fa-check"></i> Фотосессия</li>
+                        </ul>
+                        <a href="contacts.html" class="btn">Выбрать пакет</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="price-calculator">
+        <div class="container">
+            <div class="calculator-container">
+                <div class="calculator-form">
+                    <h3>Предварительный расчет стоимости</h3>
+                    <p>Узнайте примерную стоимость груминга для вашего питомца</p>
+
+                    <div class="form-group">
+                        <label for="pet-type">Вид животного:</label>
+                        <select id="pet-type">
+                            <option value="dog-small">Собака (маленькая)</option>
+                            <option value="dog-medium">Собака (средняя)</option>
+                            <option value="dog-large">Собака (крупная)</option>
+                            <option value="cat-short">Кошка (короткошерстная)</option>
+                            <option value="cat-long">Кошка (длинношерстная)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Основная услуга:</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="service" value="complex" checked> Комплексный груминг</label>
+                            <label><input type="radio" name="service" value="express"> Экспресс-уход</label>
+                            <label><input type="radio" name="service" value="hygiene"> Гигиеническая стрижка</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Дополнительные услуги:</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" value="teeth"> Чистка зубов (+800 ₽)</label>
+                            <label><input type="checkbox" value="spa"> SPA-процедуры (+1500 ₽)</label>
+                            <label><input type="checkbox" value="creative"> Креативная стрижка (+1000 ₽)</label>
+                        </div>
+                    </div>
+
+                    <div class="calculator-result">
+                        <h4>Примерная стоимость:</h4>
+                        <div class="result-price" id="calculated-price">2500 ₽</div>
+                        <p class="note">Точная стоимость будет определена после осмотра питомца</p>
+                    </div>
+
+                    <button class="btn" onclick="calculatePrice()">Рассчитать</button>
+                </div>
+                <div class="calculator-info">
+                    <h3>Что влияет на стоимость?</h3>
+                    <ul>
+                        <li><strong>Размер и порода</strong> — для крупных собак требуется больше времени и материалов</li>
+                        <li><strong>Состояние шерсти</strong> — наличие колтунов увеличивает время работы</li>
+                        <li><strong>Характер питомца</strong> — спокойные животные обрабатываются быстрее</li>
+                        <li><strong>Сложность стрижки</strong> — породные и креативные стрижки требуют больше навыков</li>
+                        <li><strong>Дополнительные услуги</strong> — SPA, чистка зубов и т.д.</li>
+                    </ul>
+                    <div class="tip">
+                        <i class="fas fa-lightbulb"></i>
+                        <p><strong>Совет:</strong> При регулярном груминге (раз в 1-2 месяца) шерсть сохраняется в лучшем состоянии, что снижает стоимость услуг.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="discounts">
+        <div class="container">
+            <h2>Акции и скидки</h2>
+            <div class="discounts-container">
+                <div class="discount-card">
+                    <div class="discount-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Первым посетителям</h3>
+                    <p>Скидка <strong>15%</strong> на первый комплексный груминг при онлайн-записи</p>
+                </div>
+                <div class="discount-card">
+                    <div class="discount-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Постоянным клиентам</h3>
+                    <p>Накопительная система скидок. После 5 визитов — скидка <strong>10%</strong> на все услуги</p>
+                </div>
+                <div class="discount-card">
+                    <div class="discount-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Питомцам из приютов</h3>
+                    <p>Постоянная скидка <strong>20%</strong> для животных, взятых из приютов</p>
+                </div>
+                <div class="discount-card">
+                    <div class="discount-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3>В день рождения</h3>
+                    <p>Скидка <strong>25%</strong> на груминг в день рождения питомца (по паспорту)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-pricing">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Остались вопросы по стоимости?</h2>
+                <p>Наши менеджеры с радостью проконсультируют вас и рассчитают точную стоимость для вашего питомца</p>
+                <div class="cta-buttons">
+                    <a href="contacts.html" class="btn"><i class="fas fa-phone-alt"></i> Позвонить нам</a>
+                    <a href="contacts.html" class="btn btn-outline"><i class="fas fa-calendar-alt"></i> Записаться онлайн</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3><i class="fas fa-paw"></i> Velvet Paws</h3>
+                <p>Премиальный груминг-салон для кошек и собак. Забота с любовью и профессионализмом.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Чебоксары, ул. Калинина, д. 303</p>
+                <p><i class="fas fa-phone"></i> +7 (995) 563-45-61</p>
+                <p><i class="fas fa-envelope"></i> velvetpaws_help@mail.ru</p>
+                <p><i class="fas fa-clock"></i> Пн-Вс: 9:00 - 21:00</p>
+            </div>
+            <div class="footer-section">
+                <h3>Быстрые ссылки</h3>
+                <a href="index.html">Главная</a>
+                <a href="about.html">О нас</a>
+                <a href="works.html">Наши работы</a>
+                <a href="prices.html">Цены</a>
+                <a href="contacts.html">Контакты</a>
+            </div>
+            <div class="footer-section">
+                <h3>Подписаться на новости</h3>
+                <p>Узнавайте первыми об акциях и полезных советах по уходу за питомцами.</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Ваш email" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Velvet Paws. Все права защищены.</p>
+            <p>Сделано с <i class="fas fa-heart"></i> для ваших питомцев</p>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+        }
+        document.querySelectorAll('#nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('nav').classList.remove('active');
+            });
+        });
+        document.querySelectorAll('.tab-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+                document.querySelectorAll('.pricing-table').forEach(table => table.classList.remove('active'));
+
+                this.classList.add('active');
+
+                const tabId = this.getAttribute('data-tab');
+                document.getElementById(`${tabId}-table`).classList.add('active');
+            });
+        });
+
+        function calculatePrice() {
+            const prices = {
+                'dog-small': {
+                    complex: 2000,
+                    express: 1250,
+                    hygiene: 1500
+                },
+                'dog-medium': {
+                    complex: 3250,
+                    express: 2000,
+                    hygiene: 2300
+                },
+                'dog-large': {
+                    complex: 5000,
+                    express: 3000,
+                    hygiene: 3400
+                },
+                'cat-short': {
+                    complex: 2500,
+                    express: 1750,
+                    hygiene: 2150
+                },
+                'cat-long': {
+                    complex: 3250,
+                    express: 2500,
+                    hygiene: 3000
+                }
+            };
+            const extraPrices = {
+                teeth: 800,
+                spa: 1500,
+                creative: 1000
+            };
+
+            const petType = document.getElementById('pet-type').value;
+            const serviceType = document.querySelector('input[name="service"]:checked').value;
+
+            let total = prices[petType][serviceType];
+
+            document.querySelectorAll('.checkbox-group input:checked').forEach(checkbox => {
+                total += extraPrices[checkbox.value] || 0;
+            });
+
+            document.getElementById('calculated-price').textContent = total + ' ₽';
+
+            const priceElement = document.getElementById('calculated-price');
+            priceElement.style.transform = 'scale(1.1)';
+            setTimeout(() => {
+                priceElement.style.transform = 'scale(1)';
+            }, 300);
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            calculatePrice();
+
+            document.querySelectorAll('#pet-type, input[name="service"], .checkbox-group input').forEach(element => {
+                element.addEventListener('change', calculatePrice);
+            });
+        });
+
+        document.querySelector('.subscribe-form') ? .addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            if (email) {
+                alert('Спасибо за подписку! Проверьте вашу почту.');
+                this.reset();
+            }
+        });
+    </script>
+</body>
+
+</html>
