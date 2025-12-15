@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velvet Paws — Груминг салон для кошек и собак</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <i class="fas fa-paw"></i> Velvet Paws
+        </div>
+        <div class="burger" onclick="toggleMenu()">☰</div>
+        <nav id="nav">
+            <a href="index.html" class="active"><i class="fas fa-home"></i> Главная</a>
+            <a href="about.html"><i class="fas fa-info-circle"></i> О нас</a>
+            <a href="works.html"><i class="fas fa-images"></i> Наши работы</a>
+            <a href="prices.html"><i class="fas fa-tag"></i> Цены</a>
+            <a href="contacts.html"><i class="fas fa-phone-alt"></i> Контакты</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-overlay">
+            <h1>Премиальный груминг для ваших питомцев</h1>
+            <p>Любовь, забота и стиль в каждой детали ✨</p>
+            <a class="btn" href="contacts.html">Записаться онлайн</a>
+            <div class="hero-icons">
+                <div class="icon-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Безопасно</span>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-award"></i>
+                    <span>Профессионально</span>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-heart"></i>
+                    <span>С любовью</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <h2>Наши услуги</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-shower"></i>
+                </div>
+                <h3>Комплексный груминг</h3>
+                <p>Мытье, сушка, стрижка, уход за шерстью, чистка ушей и стрижка когтей.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas cut-icon">✂️</i>
+                </div>
+                <h3>Креативные стрижки</h3>
+                <p>Модные и гигиенические стрижки по породным стандартам или вашим пожеланиям.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-spa"></i>
+                </div>
+                <h3>SPA-уход</h3>
+                <p>Расслабляющие ванны, маски для шерсти, ароматерапия и массаж для питомцев.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-teeth"></i>
+                </div>
+                <h3>Гигиенические процедуры</h3>
+                <p>Чистка зубов, уход за глазами, выражение параанальных желез.</p>
+            </div>
+        </div>
+    </section>
+    <section class="advantages">
+        <h2>Почему выбирают нас?</h2>
+        <div class="advantages-container">
+            <div class="advantage">
+                <i class="fas fa-user-check"></i>
+                <h3>Опытные грумеры</h3>
+                <p>Наши специалисты имеют сертификаты и регулярно повышают квалификацию.</p>
+            </div>
+            <div class="advantage">
+                <i class="fas fa-leaf"></i>
+                <h3>Экологичные средства</h3>
+                <p>Используем только гипоаллергенную косметику премиум-класса.</p>
+            </div>
+            <div class="advantage">
+                <i class="fas fa-home"></i>
+                <h3>Домашняя атмосфера</h3>
+                <p>Питомцы чувствуют себя комфортно без стресса и страха.</p>
+            </div>
+            <div class="advantage">
+                <i class="fas fa-clock"></i>
+                <h3>Гибкий график</h3>
+                <p>Работаем с 9:00 до 21:00, включая выходные. Возможен выезд на дом.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>Отзывы владельцев</h2>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <div class="testimonial-header">
+                    <img src="https://i.pinimg.com/736x/87/4e/a3/874ea3ac0c88d80fe6186e7e22b72d5f.jpg" alt="Анна">
+                    <div>
+                        <h4>Анна К.</h4>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>Мой шпиц всегда боялся груминга, но здесь он ведет себя спокойно! Специалисты нашли подход к самому капризному клиенту.</p>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-header">
+                    <img src="https://i.pinimg.com/originals/ef/bc/00/efbc007752ca9ac2eed8d9b8c37fa808.jpg" alt="Дмитрий">
+                    <div>
+                        <h4>Дмитрий С.</h4>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>Регулярно вожу сюда своего ретривера. Всегда отличный результат, собака выглядит ухоженной и пахнет прекрасно!</p>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-header">
+                    <img src="https://randomuser.me/api/portraits/women/67.jpg" alt="Ольга">
+                    <div>
+                        <h4>Ольга М.</h4>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>Впервые попробовали SPA для кошки. Не ожидала, что ей так понравится! Шерсть стала невероятно мягкой и блестящей.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="cta-content">
+            <h2>Запишитесь на первый визит со скидкой 15%!</h2>
+            <p>Предложение действует для новых клиентов до конца месяца</p>
+            <a class="btn btn-secondary" href="contacts.html">Получить скидку</a>
+        </div>
+    </section>
+
+    <section class="gallery-preview">
+        <h2>Наши работы</h2>
+        <p>Примеры стрижек и ухода за питомцами</p>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="https://www.dogster.com/wp-content/uploads/2024/03/Silver-poodle-shaking-hand_dezy_Shutterstock.jpg" alt="Стрижка пуделя">
+                <div class="gallery-overlay">Пудель</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://avatars.mds.yandex.net/get-mpic/11562667/2a0000018c281f6bae40830570a058fb1783/orig" alt="Уход за Британцем">
+                <div class="gallery-overlay">Британец</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://png.pngtree.com/thumb_back/fh260/background/20220401/pngtree-biewer-yorkshire-terrier-on-colored-backgrounds-white-yorkie-background-photo-image_29994966.jpg" alt="Стрижка йорка">
+                <div class="gallery-overlay">Йоркширский терьер</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://img.freepik.com/premium-photo/studio-photography-maine-coon-cat-colored-backgrounds_212190-1431.jpg?semt=ais_hybrid&w=740" alt="Уход за Мейн-кун">
+                <div class="gallery-overlay">Мейн-кун</div>
+            </div>
+        </div>
+        <a class="btn" href="works.html">Смотреть все работы</a>
+    </section>
+
+    <section class="faq">
+        <h2>Частые вопросы</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>Как подготовить питомца к грумингу?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>За 2-3 часа до визита покормите питомца, погуляйте с собакой. Если у животного есть особенности поведения, сообщите об этом заранее.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>Сколько длится процедура груминга?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Время зависит от размера животного, состояния шерсти и выбранных услуг. В среднем от 1,5 до 3 часов.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>Можно ли присутствовать во время груминга?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Да, у нас есть специальная зона ожидания с возможностью наблюдать за процессом через стекло, чтобы не отвлекать питомца.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3><i class="fas fa-paw"></i> Velvet Paws</h3>
+                <p>Премиальный груминг-салон для кошек и собак. Забота с любовью и профессионализмом.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Чебоксары, ул. Калинина, д. 303</p>
+                <p><i class="fas fa-phone"></i> +7 (995) 563-45-61</p>
+                <p><i class="fas fa-envelope"></i> velvetpaws_help@mail.ru</p>
+                <p><i class="fas fa-clock"></i> Пн-Вс: 9:00 - 21:00</p>
+            </div>
+            <div class="footer-section">
+                <h3>Быстрые ссылки</h3>
+                <a href="index.html">Главная</a>
+                <a href="about.html">О нас</a>
+                <a href="prices.html">Цены</a>
+                <a href="contacts.html">Контакты</a>
+            </div>
+            <div class="footer-section">
+                <h3>Подписаться на новости</h3>
+                <p>Узнавайте первыми об акциях и полезных советах по уходу за питомцами.</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Ваш email" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Velvet Paws. Все права защищены.</p>
+            <p>Сделано с <i class="fas fa-heart"></i> для ваших питомцев</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+        }
+
+        document.querySelectorAll('#nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('nav').classList.remove('active');
+            });
+        });
+
+        function toggleFaq(element) {
+            const answer = element.nextElementSibling;
+            const icon = element.querySelector('i');
+
+            answer.classList.toggle('active');
+            icon.classList.toggle('fa-chevron-down');
+            icon.classList.toggle('fa-chevron-up');
+        }
+        document.querySelector('.subscribe-form') ? .addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            if (email) {
+                alert('Спасибо за подписку! Проверьте вашу почту.');
+                this.reset();
+            }
+        });
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if (this.getAttribute('href') === '#') return;
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId.startsWith('#')) {
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

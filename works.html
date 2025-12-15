@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наши работы — Velvet Paws</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <i class="fas fa-paw"></i> Velvet Paws
+        </div>
+        <div class="burger" onclick="toggleMenu()">☰</div>
+        <nav id="nav">
+            <a href="index.html"><i class="fas fa-home"></i> Главная</a>
+            <a href="about.html"><i class="fas fa-info-circle"></i> О нас</a>
+            <a href="works.html" class="active"><i class="fas fa-images"></i> Наши работы</a>
+            <a href="prices.html"><i class="fas fa-tag"></i> Цены</a>
+            <a href="contacts.html"><i class="fas fa-phone-alt"></i> Контакты</a>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>Наши работы</h1>
+            <p>Убедитесь сами, как преображаются питомцы после визита в Velvet Paws</p>
+        </div>
+    </section>
+
+    <section class="works-filter">
+        <div class="container">
+            <h2>Галерея груминга</h2>
+            <p class="subtitle">Выберите категорию, чтобы увидеть соответствующие работы</p>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Все работы</button>
+                <button class="filter-btn" data-filter="dogs">Собаки</button>
+                <button class="filter-btn" data-filter="cats">Кошки</button>
+                <button class="filter-btn" data-filter="creative">Креативные стрижки</button>
+                <button class="filter-btn" data-filter="spa">SPA-процедуры</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="works-gallery">
+        <div class="container">
+            <div class="gallery-container">
+                <div class="work-item" data-category="dogs creative">
+                    <div class="work-comparison">
+                        <div class="before-after">
+                            <div class="before">
+                                <img src="https://i.pinimg.com/736x/b5/bc/fe/b5bcfebf48ee22a70a7d2deb14e64df9.jpg" alt="Пудель до стрижки">
+                                <div class="label">До</div>
+                            </div>
+                            <div class="after">
+                                <img src="https://deutscher-pudel-klub.de/img/0011_005_janett_zuzu_003_1.jpg" alt="Пудель после стрижки">
+                                <div class="label">После</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h3>Пудель "Люси"</h3>
+                        <p class="work-description">Породная стрижка "лев" для пуделя. Включала комплексный груминг, SPA-уход и креативное окрашивание хвостика.</p>
+                        <div class="work-tags">
+                            <span class="tag">Стрижка</span>
+                            <span class="tag">SPA</span>
+                            <span class="tag">Окрашивание</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item" data-category="cats spa">
+                    <div class="work-comparison">
+                        <div class="before-after">
+                            <div class="before">
+                                <img src="https://lapo4ka.com/uploads/product/3400/3411/desc/animal-3199289_960_720_2018-08-22_06-04-23.jpg" alt="Кошка до груминга">
+                                <div class="label">До</div>
+                            </div>
+                            <div class="after">
+                                <img src="https://tint.creativemarket.com/sm_DXy73k0l9TeyGetFgzvj3DszdjAfaNpKgRtjLNjI/width:3640/height:2410/gravity:ce/rt:fill-down/el:1/czM6Ly9maWxlcy5jcmVhdGl2ZW1hcmtldC5jb20vaW1hZ2VzL3NjcmVlbnNob3RzL3Byb2R1Y3RzLzQ5MjgvNDkyODAvNDkyODA1MzcvXzJwZzIzMzAtby5qcGc?1711942260"
+                                    alt="Кошка после груминга">
+                                <div class="label">После</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h3>Персидская кошка "Соня"</h3>
+                        <p class="work-description">Комплексный уход за длинной шерстью, расчесывание колтунов, SPA-процедуры с ароматерапией, стрижка когтей.</p>
+                        <div class="work-tags">
+                            <span class="tag">Уход за шерстью</span>
+                            <span class="tag">SPA</span>
+                            <span class="tag">Гигиена</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item" data-category="dogs creative">
+                    <div class="work-comparison">
+                        <div class="before-after">
+                            <div class="before">
+                                <img src="https://img.freepik.com/free-photo/lovely-pet-portrait-isolated_23-2149192303.jpg?semt=ais_hybrid&w=740" alt="Йоркширский терьер до стрижки">
+                                <div class="label">До</div>
+                            </div>
+                            <div class="after">
+                                <img src="https://i.pinimg.com/originals/70/71/03/7071038e923d6d87bb95b7ce4c626933.jpg" alt="Йоркширский терьер после стрижки">
+                                <div class="label">После</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h3>Йоркширский терьер "Рокси"</h3>
+                        <p class="work-description">Модная стрижка с сохранением длины на ушках и хвосте, гигиеническая обработка, укладка шерсти.</p>
+                        <div class="work-tags">
+                            <span class="tag">Модная стрижка</span>
+                            <span class="tag">Укладка</span>
+                            <span class="tag">Гигиена</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-item" data-category="dogs spa">
+                    <div class="work-comparison">
+                        <div class="before-after">
+                            <div class="before">
+                                <img src="https://desicomments.com/wp-content/uploads/Brown-Labrador-Retriever-id102.jpg" alt="Лабрадор до груминга">
+                                <div class="label">До</div>
+                            </div>
+                            <div class="after">
+                                <img src="https://avatars.mds.yandex.net/i?id=c92b1324344d56821f0ffdcb04dc5c21_l-5259037-images-thumbs&n=13" alt="Лабрадор после груминга">
+                                <div class="label">После</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h3>Лабрадор "Барон"</h3>
+                        <p class="work-description">Комплексный груминг для крупной породы: мытье с глубокой чисткой шерсти, сушка, обработка ушей и стрижка когтей.</p>
+                        <div class="work-tags">
+                            <span class="tag">Комплексный груминг</span>
+                            <span class="tag">Крупная порода</span>
+                            <span class="tag">Гигиена</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item" data-category="cats creative">
+                    <div class="work-comparison">
+                        <div class="before-after">
+                            <div class="before">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Мейн_кун_W.Ch.Ais_Black_Liger_Cat_from_Nord-Westland_cattery.JPG/960px-Мейн_кун_W.Ch.Ais_Black_Liger_Cat_from_Nord-Westland_cattery.JPG" alt="Кот мейн-кун до стрижки">
+                                <div class="label">До</div>
+                            </div>
+                            <div class="after">
+                                <img src="https://avatars.mds.yandex.net/i?id=08f3a9ab165f28246f5253c262f0f210_l-5249255-images-thumbs&n=13" alt="Кот мейн-кун после стрижки">
+                                <div class="label">После</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h3>Мейн-кун "Зевс"</h3>
+                        <p class="work-description">Летняя гигиеническая стрижка для комфорта питомца в жару, обработка подушечек лап, чистка зубов.</p>
+                        <div class="work-tags">
+                            <span class="tag">Гигиеническая стрижка</span>
+                            <span class="tag">Летний уход</span>
+                            <span class="tag">Чистка зубов</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item" data-category="dogs creative">
+                    <div class="work-comparison">
+                        <div class="before-after">
+                            <div class="before">
+                                <img src="https://img.freepik.com/premium-photo/pomeranian-spitz-floor_1048944-19344430.jpg?semt=ais_hybrid&w=740" alt="Шпиц до груминга">
+                                <div class="label">До</div>
+                            </div>
+                            <div class="after">
+                                <img src="https://i.pinimg.com/736x/9b/87/46/9b87468eca84fb02d927e45e5e25a244.jpg" alt="Шпиц после груминга">
+                                <div class="label">После</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h3>Померанский шпиц "Марси"</h3>
+                        <p class="work-description">Стрижка "мишка" с округлыми формами, укладка пушистой шерсти, украшение бантиком, ароматизация.</p>
+                        <div class="work-tags">
+                            <span class="tag">Стрижка "мишка"</span>
+                            <span class="tag">Укладка</span>
+                            <span class="tag">Ароматизация</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item" data-category="dogs spa">
+                    <div class="work-comparison">
+                        <div class="before-after">
+                            <div class="before">
+                                <img src="https://i.pinimg.com/originals/8d/75/e3/8d75e3951052c946608ed5bc58f5cef0.jpg" alt="Такса до груминга">
+                                <div class="label">До</div>
+                            </div>
+                            <div class="after">
+                                <img src="https://i.pinimg.com/originals/1a/c6/76/1ac6767a89a71645ae17a785a77fcc16.jpg" alt="Такса после груминга">
+                                <div class="label">После</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h3>Такса "Фунтик"</h3>
+                        <p class="work-description">Комплексный уход, чистка параанальных желез, стрижка когтей, массаж и ароматерапия для расслабления.</p>
+                        <div class="work-tags">
+                            <span class="tag">Комплексный уход</span>
+                            <span class="tag">Массаж</span>
+                            <span class="tag">Ароматерапия</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item" data-category="cats creative">
+                    <div class="work-comparison">
+                        <div class="before-after">
+                            <div class="before">
+                                <img src="https://i.ytimg.com/vi/4SX_wKOOxms/maxresdefault.jpg" alt="Сфинкс до ухода">
+                                <div class="label">До</div>
+                            </div>
+                            <div class="after">
+                                <img src="https://www.petsgroomer.ru/picture/img/page_285_5.jpg" alt="Сфинкс после ухода">
+                                <div class="label">После</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <h3>Сфинкс "Гоша"</h3>
+                        <p class="work-description">Специальный уход для бесшерстных пород: очищение кожи, увлажнение, защита от солнца, чистка ушей.</p>
+                        <div class="work-tags">
+                            <span class="tag">Уход за кожей</span>
+                            <span class="tag">Бесшерстные породы</span>
+                            <span class="tag">Защита</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="transformation">
+        <div class="container">
+            <div class="transformation-content">
+                <div class="transformation-text">
+                    <h2>Волшебные преображения</h2>
+                    <p>Каждое преображение — это результат кропотливой работы наших грумеров, которые не только делают питомцев красивыми, но и заботятся об их здоровье и комфорте.</p>
+                    <p>Мы используем только безопасные средства и индивидуальный подход к каждому животному, учитывая особенности породы, возраст и характер.</p>
+                    <a href="contacts.html" class="btn">Записаться на груминг</a>
+                </div>
+                <div class="transformation-image">
+                    <img src="https://images.unsplash.com/photo-1554456854-55a089fd4cb2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Довольная собака после груминга">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-works">
+        <div class="container">
+            <h2>Что говорят владельцы</h2>
+            <p class="subtitle">Реальные отзывы о результатах груминга в нашем салоне</p>
+            <div class="testimonials-container">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>Наш йорк Рокси после стрижки в Velvet Paws выглядит как звезда! Стригли впервые, боялись, но грумеры нашли подход — собака вела себя спокойно и доверчиво.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Марина">
+                        <div>
+                            <h4>Марина К.</h4>
+                            <p>хозяйка йоркширского терьера</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>Приводили нашего пуделя на комплексный груминг. Результат превзошел ожидания! Шерсть блестит, запах приятный, а главное — собака довольна и не пытается снять бантик.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Андрей">
+                        <div>
+                            <h4>Андрей С.</h4>
+                            <p>хозяин пуделя</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>Наш мейн-кун после летней стрижки стал активнее и веселее. Спасибо за профессиональный подход и заботу! Теперь только к вам.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Ольга">
+                        <div>
+                            <h4>Ольга В.</h4>
+                            <p>хозяйка мейн-куна</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-works">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Готовы преобразить вашего питомца?</h2>
+                <p>Запишитесь на груминг онлайн и получите бесплатную консультацию</p>
+                <div class="cta-buttons">
+                    <a href="contacts.html" class="btn">Записаться сейчас</a>
+                    <a href="prices.html" class="btn btn-outline">Посмотреть цены</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3><i class="fas fa-paw"></i> Velvet Paws</h3>
+                <p>Премиальный груминг-салон для кошек и собак. Забота с любовью и профессионализмом.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Чебоксары, ул. Калинина, д. 303</p>
+                <p><i class="fas fa-phone"></i> +7 (995) 563-45-61</p>
+                <p><i class="fas fa-envelope"></i> velvetpaws_help@mail.ru</p>
+                <p><i class="fas fa-clock"></i> Пн-Вс: 9:00 - 21:00</p>
+            </div>
+            <div class="footer-section">
+                <h3>Быстрые ссылки</h3>
+                <a href="index.html">Главная</a>
+                <a href="about.html">О нас</a>
+                <a href="works.html">Наши работы</a>
+                <a href="prices.html">Цены</a>
+                <a href="contacts.html">Контакты</a>
+            </div>
+            <div class="footer-section">
+                <h3>Подписаться на новости</h3>
+                <p>Узнавайте первыми об акциях и полезных советах по уходу за питомцами.</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Ваш email" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Velvet Paws. Все права защищены.</p>
+            <p>Сделано с <i class="fas fa-heart"></i> для ваших питомцев</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+        }
+
+        document.querySelectorAll('#nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('nav').classList.remove('active');
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const workItems = document.querySelectorAll('.work-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+
+                    this.classList.add('active');
+
+                    const filterValue = this.getAttribute('data-filter');
+
+                    workItems.forEach(item => {
+                        const categories = item.getAttribute('data-category');
+
+                        if (filterValue === 'all' || categories.includes(filterValue)) {
+                            item.style.display = 'block';
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                                item.style.transform = 'translateY(0)';
+                            }, 10);
+                        } else {
+                            item.style.opacity = '0';
+                            item.style.transform = 'translateY(20px)';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+
+            const beforeAfterContainers = document.querySelectorAll('.before-after');
+
+            beforeAfterContainers.forEach(container => {
+                let isMouseDown = false;
+
+                container.addEventListener('mousedown', function() {
+                    isMouseDown = true;
+                });
+
+                container.addEventListener('mousemove', function(e) {
+                    if (!isMouseDown) return;
+
+                    const width = this.offsetWidth;
+                    const x = e.offsetX;
+                    const percentage = Math.max(10, Math.min(90, (x / width) * 100));
+
+                    this.style.setProperty('--split-position', `${percentage}%`);
+                });
+
+                container.addEventListener('mouseup', function() {
+                    isMouseDown = false;
+                });
+
+                container.addEventListener('mouseleave', function() {
+                    isMouseDown = false;
+                    this.style.setProperty('--split-position', '50%');
+                });
+
+                container.addEventListener('touchstart', function(e) {
+                    isMouseDown = true;
+                    const touch = e.touches[0];
+                    const rect = this.getBoundingClientRect();
+                    const x = touch.clientX - rect.left;
+                    const width = this.offsetWidth;
+                    const percentage = Math.max(10, Math.min(90, (x / width) * 100));
+
+                    this.style.setProperty('--split-position', `${percentage}%`);
+                });
+
+                container.addEventListener('touchmove', function(e) {
+                    if (!isMouseDown) return;
+
+                    const touch = e.touches[0];
+                    const rect = this.getBoundingClientRect();
+                    const x = touch.clientX - rect.left;
+                    const width = this.offsetWidth;
+                    const percentage = Math.max(10, Math.min(90, (x / width) * 100));
+
+                    this.style.setProperty('--split-position', `${percentage}%`);
+                });
+
+                container.addEventListener('touchend', function() {
+                    isMouseDown = false;
+                    this.style.setProperty('--split-position', '50%');
+                });
+            });
+        });
+
+        document.querySelector('.subscribe-form') ? .addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            if (email) {
+                alert('Спасибо за подписку! Проверьте вашу почту.');
+                this.reset();
+            }
+        });
+    </script>
+</body>
+
+</html>

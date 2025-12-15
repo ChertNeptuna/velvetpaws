@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты и запись — Velvet Paws</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <i class="fas fa-paw"></i> Velvet Paws
+        </div>
+        <div class="burger" onclick="toggleMenu()">☰</div>
+        <nav id="nav">
+            <a href="index.html"><i class="fas fa-home"></i> Главная</a>
+            <a href="about.html"><i class="fas fa-info-circle"></i> О нас</a>
+            <a href="works.html"><i class="fas fa-images"></i> Наши работы</a>
+            <a href="prices.html"><i class="fas fa-tag"></i> Цены</a>
+            <a href="contacts.html" class="active"><i class="fas fa-phone-alt"></i> Контакты</a>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>Контакты и запись</h1>
+            <p>Свяжитесь с нами или запишитесь на прием онлайн</p>
+        </div>
+    </section>
+
+    <section class="contact-options">
+        <div class="container">
+            <h2>Как с нами связаться</h2>
+            <p class="subtitle">Выберите удобный для вас способ</p>
+            <div class="options-container">
+                <div class="option-card">
+                    <div class="option-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Позвонить</h3>
+                    <p>Пн-Вс: 9:00 - 21:00</p>
+                    <a href="tel:+74951234567" class="option-link">+7 (995) 563-45-61</a>
+                </div>
+                <div class="option-card">
+                    <div class="option-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Приехать</h3>
+                    <p>Чебоксары, ул. Калинина, д. 303</p>
+                    <a href="#map" class="option-link">Смотреть на карте</a>
+                </div>
+                <div class="option-card">
+                    <div class="option-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Онлайн-запись</h3>
+                    <p>Заполните форму и мы перезвоним</p>
+                    <a href="#booking-form" class="option-link">Записаться онлайн</a>
+                </div>
+                <div class="option-card">
+                    <div class="option-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Написать</h3>
+                    <p>Ответим в течение 2 часов</p>
+                    <a href="#" class="option-link">velvetpaws@mail.ru</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Наши контакты</h2>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h3>Адрес</h3>
+                                <p>Чебоксары, ул. Калинина, д. 303</p>
+                                <p class="contact-note">Вход со двора, 2 этаж</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h3>Часы работы</h3>
+                                <p><strong>Понедельник - Пятница:</strong> 9:00 - 21:00</p>
+                                <p><strong>Суббота - Воскресенье:</strong> 10:00 - 20:00</p>
+                                <p class="contact-note">Принимаем по предварительной записи</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h3>Телефоны</h3>
+                                <p><strong>Запись и консультации:</strong> +7 (995) 563-45-61</p>
+                                <p><strong>Экстренная связь:</strong> +7 (916) 543-55-64</p>
+                                <p class="contact-note">Звонки принимаем с 8:00 до 22:00</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h3>Электронная почта</h3>
+                                <p><strong>Общие вопросы:</strong> velvetpaws_help@mail.ru</p>
+                                <p><strong>Запись на груминг:</strong> velvetpaws@mail.ru</p>
+                                <p><strong>Сотрудничество:</strong> partner_velvetpaws@mail.ru</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-section">
+                        <h3>Мы в социальных сетях</h3>
+                        <p>Подписывайтесь, чтобы быть в курсе акций и новостей</p>
+                        <div class="social-links-contact">
+                            <a href="#" class="social-link instagram">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                            <a href="#" class="social-link vk">
+                                <i class="fab fa-vk"></i> ВКонтакте
+                            </a>
+                            <a href="#" class="social-link telegram">
+                                <i class="fab fa-telegram"></i> Telegram
+                            </a>
+                            <a href="#" class="social-link whatsapp">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-section" id="booking-form">
+                    <h2>Онлайн-запись</h2>
+                    <p>Оставьте заявку, и мы свяжемся с вами для подтверждения записи в течение 30 минут</p>
+
+                    <form id="booking-form" class="booking-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Ваше имя *</label>
+                                <input type="text" id="name" name="name" placeholder="Иванова Анна" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Телефон *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+7 (999) 123-45-67" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="pet-name">Имя питомца *</label>
+                                <input type="text" id="pet-name" name="pet-name" placeholder="Боня" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="pet-type">Вид питомца *</label>
+                                <select id="pet-type" name="pet-type" required>
+                                    <option value="" disabled selected>Выберите тип</option>
+                                    <option value="dog-small">Собака (маленькая)</option>
+                                    <option value="dog-medium">Собака (средняя)</option>
+                                    <option value="dog-large">Собака (крупная)</option>
+                                    <option value="cat-short">Кошка (короткошерстная)</option>
+                                    <option value="cat-long">Кошка (длинношерстная)</option>
+                                    <option value="other">Другое</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Услуга *</label>
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected>Выберите услугу</option>
+                                <option value="complex-dog">Комплексный груминг для собак</option>
+                                <option value="complex-cat">Комплексный груминг для кошек</option>
+                                <option value="hygienic">Гигиеническая стрижка</option>
+                                <option value="creative">Креативная/породная стрижка</option>
+                                <option value="spa">SPA-процедуры</option>
+                                <option value="express">Экспресс-уход (мытье + сушка)</option>
+                                <option value="other">Другая услуга</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date">Желаемая дата *</label>
+                            <input type="date" id="date" name="date" min="" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Предпочтительное время</label>
+                            <div class="time-slots">
+                                <label class="time-slot">
+                                    <input type="radio" name="time" value="9-12">
+                                    <span>9:00 - 12:00</span>
+                                </label>
+                                <label class="time-slot">
+                                    <input type="radio" name="time" value="12-15">
+                                    <span>12:00 - 15:00</span>
+                                </label>
+                                <label class="time-slot">
+                                    <input type="radio" name="time" value="15-18">
+                                    <span>15:00 - 18:00</span>
+                                </label>
+                                <label class="time-slot">
+                                    <input type="radio" name="time" value="18-21">
+                                    <span>18:00 - 21:00</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="comment">Комментарий или особые пожелания</label>
+                            <textarea id="comment" name="comment" placeholder="Например: питомец боится фена, есть колтуны, аллергия на определенные средства..."></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="agreement" name="agreement" required>
+                                <span>Я согласен(а) на обработку персональных данных и с <a href="privacy.html">политикой конфиденциальности</a></span>
+                            </label>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span>Хочу получать информацию об акциях и полезные советы по уходу за питомцем</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-submit">
+                            <i class="fas fa-paper-plane"></i>
+                            Отправить заявку
+                        </button>
+
+                        <p class="form-note">* — обязательные для заполнения поля</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section" id="map">
+        <div class="container">
+            <h2>Как нас найти</h2>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <div class="map-info">
+                        <h3>Салон Velvet Paws</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Чебоксары, ул. Калинина, д. 303</p>
+                        <p><i class="fas fa-subway"></i> Ближайшая остановка: Мега Молл</p>
+                        <p><i class="fas fa-car"></i> Парковка: есть платная парковка во дворе</p>
+                        <p><i class="fas fa-wheelchair"></i> Доступность: есть пандус для колясок</p>
+                    </div>
+                    <div class="map-image">
+                        <div class="map-frame">
+                            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Карта местоположения">
+                            <div class="map-marker">
+                                <i class="fas fa-map-pin"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-contact">
+        <div class="container">
+            <h2>Частые вопросы о записи</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Нужно ли прививать питомца перед визитом?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, для безопасности всех животных в нашем салоне мы требуем наличие действующих прививок. Пожалуйста, возьмите с собой ветеринарный паспорт с отметками о прививках.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Можно ли отменить или перенести запись?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, вы можете отменить или перенести запись бесплатно, предупредив нас за 4 часа до назначенного времени. При отмене менее чем за 4 часа взимается штраф в размере 50% от стоимости услуги.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Что делать, если питомец боится груминга?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Наши грумеры имеют опыт работы с тревожными животными. Мы используем техники мягкого знакомства, успокаивающие феромоны и даем время питомцу освоиться. Сообщите об этом заранее при записи.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Можно ли присутствовать во время процедур?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, у нас есть комфортная зона ожидания с возможностью наблюдать за процессом через стеклянную перегородку, чтобы не отвлекать питомца. Присутствие в самом груминг-зале возможно только по согласованию с грумером.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-contact">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Остались вопросы?</h2>
+                <p>Позвоните нам или напишите в мессенджер — мы с радостью проконсультируем!</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-call">
+                        <i class="fas fa-phone-alt"></i> Позвонить сейчас
+                    </a>
+                    <a href="https://wa.me/" class="btn btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Написать в WhatsApp
+                    </a>
+                    <a href="https://t.me/" class="btn btn-telegram" target="_blank">
+                        <i class="fab fa-telegram"></i> Написать в Telegram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3><i class="fas fa-paw"></i> Velvet Paws</h3>
+                <p>Премиальный груминг-салон для кошек и собак. Забота с любовью и профессионализмом.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Чебоксары, ул. Калинина, д. 303</p>
+                <p><i class="fas fa-phone"></i> +7 (995) 563-45-61</p>
+                <p><i class="fas fa-envelope"></i> velvetpaws_help@mail.ru</p>
+                <p><i class="fas fa-clock"></i> Пн-Вс: 9:00 - 21:00</p>
+            </div>
+            <div class="footer-section">
+                <h3>Быстрые ссылки</h3>
+                <a href="index.html">Главная</a>
+                <a href="about.html">О нас</a>
+                <a href="works.html">Наши работы</a>
+                <a href="prices.html">Цены</a>
+                <a href="contacts.html">Контакты</a>
+            </div>
+            <div class="footer-section">
+                <h3>Подписаться на новости</h3>
+                <p>Узнавайте первыми об акциях и полезных советах по уходу за питомцами.</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Ваш email" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Velvet Paws. Все права защищены.</p>
+            <p>Сделано с <i class="fas fa-heart"></i> для ваших питомцев</p>
+        </div>
+    </footer>
+
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Заявка отправлена!</h3>
+                <span class="close-modal" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <p>Спасибо за вашу заявку! Мы свяжемся с вами в течение 30 минут для подтверждения записи.</p>
+                <p>Номер вашей заявки: <strong id="booking-number">VP-2025-001</strong></p>
+                <button class="btn" onclick="closeModal()">Понятно</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+        }
+        document.querySelectorAll('#nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('nav').classList.remove('active');
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('date').min = today;
+            const tomorrow = new Date();
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            const tomorrowStr = tomorrow.toISOString().split('T')[0];
+            document.getElementById('date').value = tomorrowStr;
+        });
+
+        function toggleFaq(element) {
+            const answer = element.nextElementSibling;
+            const icon = element.querySelector('i');
+
+            answer.classList.toggle('active');
+            icon.classList.toggle('fa-chevron-down');
+            icon.classList.toggle('fa-chevron-up');
+        }
+        document.getElementById('booking-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const petName = document.getElementById('pet-name').value;
+            const petType = document.getElementById('pet-type').value;
+            const service = document.getElementById('service').value;
+            const date = document.getElementById('date').value;
+            const agreement = document.getElementById('agreement').checked;
+            if (!name || !phone || !petName || !petType || !service || !date || !agreement) {
+                alert('Пожалуйста, заполните все обязательные поля и согласитесь с обработкой данных.');
+                return;
+            }
+            const bookingNumber = 'VP-' + new Date().getFullYear() + '-' +
+                String(Math.floor(Math.random() * 1000)).padStart(3, '0');
+            document.getElementById('booking-number').textContent = bookingNumber;
+            document.getElementById('successModal').style.display = 'flex';
+            console.log('Заявка отправлена:', {
+                name,
+                phone,
+                petName,
+                petType,
+                service,
+                date,
+                time: document.querySelector('input[name="time"]:checked') ? .value,
+                comment: document.getElementById('comment').value,
+                newsletter: document.getElementById('newsletter').checked
+            });
+        });
+
+        function closeModal() {
+            document.getElementById('successModal').style.display = 'none';
+        }
+        window.onclick = function(event) {
+            const modal = document.getElementById('successModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+        document.querySelector('.subscribe-form') ? .addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            if (email) {
+                alert('Спасибо за подписку! Проверьте вашу почту.');
+                this.reset();
+            }
+        });
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if (this.getAttribute('href') === '#') return;
+
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId.startsWith('#')) {
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
